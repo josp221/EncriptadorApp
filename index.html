@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Encriptador</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<img id="imagenLogo" src="imagess/Logo.png" alt="logo" />
+		</header>
+
+		<main class="container">
+			<div class="container-textarea">
+				<textarea
+					class="text-received"
+					name="informationReceived"
+					id="text-received"
+					placeholder="Ingrese el texto aquí"
+					required
+				></textarea>
+
+				<footer>
+					<p id="solo-minusculas">Solo letras minúsculas y sin acentos</p>
+					<div class="buttons">
+						<button id="encriptar">Encriptar</button>
+						<button id="desencriptar">Desencriptar</button>
+					</div>
+				</footer>
+			</div>
+
+			<div class="container_result">
+				<div class="informacion-inicial">
+					<img src="imagess/busque.webp" alt="Muñeco" srcset="" />
+					<div class="texto-inicial">
+						<h3>Ningún mensaje fue encontrado</h3>
+						<p>Ingrese el texto que desea encriptar o desencriptar</p>
+					</div>
+				</div>
+				<div class="texto"></div>
+				<button type="button" class="boton-copiar">Copiar</button>
+			</div>
+		</main>
+		<p id="copyright">&copy; Copyright J o s e L u i s P a u l</p>
+
+		<script src="main.js"></script>
+	</body>
+</html>
