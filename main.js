@@ -96,7 +96,6 @@ function mostrarResultado(textReceived) {
 
 function validarLetras(texto) {
 	const patron = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]|\d/;
-	console.log(patron.test(texto));
 	// comprobando "si" introduce caracteres especiales o números
 	if (patron.test(texto) == true) {
 		alert(
